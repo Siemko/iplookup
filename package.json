@@ -1,0 +1,11 @@
+{
+  "name": "iplocator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "fastify": "^1.7.0",
+    "geoip-lite": "^1.2.2"
+  }
+}
