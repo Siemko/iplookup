@@ -121,6 +121,10 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
+extend@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
+
 fast-decode-uri-component@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fast-decode-uri-component/-/fast-decode-uri-component-1.0.0.tgz#7ce10336aa4b26286fee93d71e6785ff0f596a33"
@@ -205,6 +209,12 @@ geoip-lite@^1.2.2:
     rimraf "^2.5.2"
     yauzl "^2.9.2"
 
+get-request-ip@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-request-ip/-/get-request-ip-1.0.1.tgz#5aa49b9d886c770a1d35a581e112a79d313f889e"
+  dependencies:
+    extend "^3.0.0"
+
 glob@^7.0.5, glob@^7.1.1:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
@@ -236,6 +246,10 @@ inflight@^1.0.4:
 inherits@2, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+
+is_js@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/is_js/-/is_js-0.9.0.tgz#0ab94540502ba7afa24c856aa985561669e9c52d"
 
 isarray@~1.0.0:
   version "1.0.0"
@@ -349,6 +363,12 @@ readable-stream@^2.1.5, readable-stream@^2.3.3:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+request-ip@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/request-ip/-/request-ip-2.1.1.tgz#99be3b1595c574d7a3fe1eb4eb83a6b59a76edae"
+  dependencies:
+    is_js "^0.9.0"
 
 ret@~0.1.10:
   version "0.1.15"

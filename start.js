@@ -3,15 +3,16 @@ const fastify = require("fastify")({
 });
 const cors = require('cors')
 const geoip = require('geoip-lite');
+const getRequestIP = require('./getIp');
 
 fastify.get("/", async (request, reply) => {
-  console.log('get leci')
-  const geo = geoip.lookup(request.query.ip);
+  fastify.log.error(`ip: ${getRequestIP(request.req)}`)
+  const geo = geoip.lookup(getRequestIP(request.req));
   reply.type("application/json").code(200);
   return geo;
 });
 
-fastify.listen(3000, '0.0.0.0', (err, address) => {
+fastify.listen(8080, '0.0.0.0', (err, address) => {
   if (err) throw err;
 });
 

@@ -6,6 +6,8 @@
   "dependencies": {
     "cors": "^2.8.4",
     "fastify": "^1.7.0",
-    "geoip-lite": "^1.2.2"
+    "geoip-lite": "^1.2.2",
+    "get-request-ip": "^1.0.1",
+    "request-ip": "^2.1.1"
   }
 }
